@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Sheryn 💖</title>
+<style>
+body{
+  margin:0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background:#ffe6f0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+.box{
+  background:white;
+  border-radius:20px;
+  padding:25px;
+  text-align:center;
+  width:90%;
+  max-width:350px;
+  box-shadow:0 10px 30px rgba(255,105,180,0.3);
+}
+button{
+  background:#ff69b4;
+  border:none;
+  padding:12px 20px;
+  border-radius:25px;
+  color:white;
+  font-size:16px;
+}
+img{
+  width:100%;
+  border-radius:15px;
+  margin:10px 0;
+}
+.hidden{display:none;}
+</style>
+</head>
+<body>
+
+<div class="box" id="welcome">
+  <h2>Haloo Sheryn 💕</h2>
+  <p>ada sesuatu buat kamu 🥹</p>
+  <button onclick="openCard()">buka 💌</button>
+</div>
+
+<div class="box hidden" id="card">
+  <audio autoplay loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <h3>HALOOOOOOO SHERYNNNNN 🎉</h3>
+  <p>
+  CIEEE SELAMAT ULANG TAHUN YAAAA 🎂<br><br>
+  semoga panjang umur, sehat selalu, rezekinya lancar 🤍<br>
+  SEMOGA LOMBA NYA MENANG YA 🔥<br>
+  I'LL SUPPORT U 100% 🫰🏻<br><br>
+  HAPPY BIRTHDAY SHERYNN 🤙🏻
+  </p>
+
+  <img src="foto1.jpg">
+  <img src="foto2.jpg">
+  <img src="foto3.jpg">
+  <img src="foto4.jpg">
+</div>
+
+<script>
+function openCard(){
+  document.getElementById("welcome").classList.add("hidden");
+  document.getElementById("card").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
